@@ -1,0 +1,10 @@
+<%- @profiles.each do |element| %>
+  <%- element.each do |k, p| %>
+    <%- p.each do |i| %>
+      <%= "#{i["campo_nombre"]}: " %>
+      <%= i["contenido"] %>
+      <br/>
+    <%- end %>
+  <%- end %>
+  <br/>
+<%- end %>
